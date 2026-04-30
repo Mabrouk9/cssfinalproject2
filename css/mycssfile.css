@@ -194,6 +194,11 @@ a.button-link:hover {
   grid-auto-rows: 150px;
   gap: 10px;
   padding: 20px;
+  list-style: none;
+  margin: 0;
+}
+.grid-gallery li {
+  list-style: none;
 }
 
 /* all images */
@@ -210,4 +215,95 @@ a.button-link:hover {
 
 .grid-gallery img:hover {
   transform: scale(1.05);
+}
+/* ===== Accessible site navigation ===== */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #111;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 0 0 8px 0;
+  z-index: 1000;
+  font-weight: bold;
+}
+.skip-link:focus {
+  left: 0;
+  outline: 3px solid #ffd400;
+  outline-offset: 2px;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 24px;
+  background: linear-gradient(to right, #293f50, #648880);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.site-title {
+  color: #f6f1d3;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+.site-title:hover,
+.site-title:focus-visible {
+  color: #ffffff;
+  animation: none;
+}
+
+.primary-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav a {
+  display: inline-block;
+  color: #f6f1d3;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.primary-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  animation: none;
+  transform: translateY(-1px);
+}
+
+.primary-nav a:focus-visible {
+  outline: 3px solid #ffd400;
+  outline-offset: 2px;
+  color: #ffffff;
+}
+
+.primary-nav a[aria-current="page"] {
+  background-color: #f6f1d3;
+  color: #293f50;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .primary-nav ul {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
