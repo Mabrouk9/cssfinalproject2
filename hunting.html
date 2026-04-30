@@ -1,36 +1,53 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Caribou &amp; Muskox — Hunting Gallery</title>
         <link rel="stylesheet" href="css/mycssfile.css">
     </head>
-    <bod>
-        
-            <section id="idcaribu">
-                <h1> Caribu </h1>
-                <nav class="grid-gallery" >
-                <img src="images/caribu1.jpeg" alt="caribu's image">
-                <img src="images/caribu2.jpeg"  alt="caribu's image">
-                <img src="images/caribu3.jpeg"  alt="caribu's image">
-                <img src="images/caribu4.jpeg"  alt="caribu's image">
-                <img src="images/caribu5.jpeg"  alt="caribu's image">
-                </nav>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+
+        <header class="site-header">
+            <a href="index.html" class="site-title">Wolves</a>
+            <nav class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#habitat">Habitat</a></li>
+                    <li><a href="index.html#diet">Diet</a></li>
+                    <li><a href="hunting.html" aria-current="page">Hunting</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <h1>Hunting Gallery</h1>
+
+            <section id="idcaribu" aria-labelledby="caribou-heading">
+                <h2 id="caribou-heading">Caribou</h2>
+                <ul class="grid-gallery" aria-label="Photos of caribou">
+                    <li><img src="images/caribu1.jpeg" alt="Caribou standing in a snowy field"></li>
+                    <li><img src="images/caribu2.jpeg" alt="Herd of caribou crossing tundra"></li>
+                    <li><img src="images/caribu3.jpeg" alt="Caribou with large antlers in profile"></li>
+                    <li><img src="images/caribu4.jpeg" alt="Caribou grazing on low vegetation"></li>
+                    <li><img src="images/caribu5.jpeg" alt="Caribou resting in winter landscape"></li>
+                </ul>
             </section>
 
-            <section id="idmuskox">
-                <h1> Muskox
-                </h1>
-                <nav class="grid-gallery">
-                    <img src="images/muskox1.jpg"  alt="Muskox's image">
-                    <img src="images/muskox2.jpg"  alt="Muskox's image">
-                    <img src="images/muskox3.jpg"  alt="Muskox's image">
-                    <img src="images/muskox4.jpg"  alt="Muskox's image">
-                    <img src="images/muskox5.jpg"  alt="Muskox's image">
-                    <img src="images/muskox6.jpeg"  alt="Muskox's image">
-                    <img src="images/muskox7.jpeg"  alt="Muskox's image">
-
-                </nav>
-
+            <section id="idmuskox" aria-labelledby="muskox-heading">
+                <h2 id="muskox-heading">Muskox</h2>
+                <ul class="grid-gallery" aria-label="Photos of muskox">
+                    <li><img src="images/muskox1.jpg" alt="Muskox standing on rocky tundra"></li>
+                    <li><img src="images/muskox2.jpg" alt="Muskox with thick winter coat"></li>
+                    <li><img src="images/muskox3.jpg" alt="Group of muskox in defensive circle"></li>
+                    <li><img src="images/muskox4.jpg" alt="Muskox grazing in summer tundra"></li>
+                    <li><img src="images/muskox5.jpg" alt="Close-up of muskox horns"></li>
+                    <li><img src="images/muskox6.jpeg" alt="Young muskox calf beside an adult"></li>
+                    <li><img src="images/muskox7.jpeg" alt="Muskox walking through snow"></li>
+                </ul>
             </section>
-            <a href="index.html" class="back-home">← Home</a>
-    </bod>
+        </main>
+    </body>
 </html>
